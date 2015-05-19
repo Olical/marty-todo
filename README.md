@@ -7,7 +7,7 @@ A simple todo application built with Marty (React / Flux). This is purely a lear
 npm install
 
 # Start the server.
-npm start
+grunt
 ```
 
 ## Unlicenced
