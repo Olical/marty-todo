@@ -1,0 +1,26 @@
+{
+  "name": "marty-todo",
+  "version": "1.0.0",
+  "description": "A simple todo application built with Marty (React / Flux)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolfy87/marty-todo.git"
+  },
+  "keywords": [
+    "marty",
+    "react",
+    "flux",
+    "todo"
+  ],
+  "author": "Oliver Caldwell <http://oli.me.uk/>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Wolfy87/marty-todo/issues"
+  },
+  "homepage": "https://github.com/Wolfy87/marty-todo#readme"
+}
