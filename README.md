@@ -6,9 +6,6 @@ A simple todo application built with Marty (React / Flux). This is purely a lear
 # Fetch the dependencies.
 npm install
 
-# Build the source.
-npm build
-
 # Start the server.
 npm start
 ```
