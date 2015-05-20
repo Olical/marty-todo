@@ -18,9 +18,9 @@ I originally set up my own gulp/browserify/babel build but I couldn't get source
   * Checkbox (toggle all done)
   * Input (creation)
   * [TodoItem]
-   * Checkbox (toggle item done)
+    * Checkbox (toggle item done)
   * TodoStatus (with count, filter and clear completed button)
-   * RadioSelector (filter)
+    * RadioSelector (filter)
 
 Will need a store to represent the todos. Would love to use immutable but this is just a quick project to play with the architecture. Maybe I will use it...
 
