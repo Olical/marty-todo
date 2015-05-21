@@ -44,7 +44,7 @@ var TodoListStore = Marty.createStore({
     // Just don't have time right now.
   },
   clearDone: function () {
-    this.state.items = _.filter(this.state.items, _.matchesProperty('done', true));
+    this.state.items = _.filter(this.state.items, _.matchesProperty('done', false));
     this.hasChanged();
   },
   getItems: function () {
