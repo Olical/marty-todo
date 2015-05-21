@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 function createItem(content, done) {
   return {
-    id: _.uniqueId('todo_list_item_'),
+    id: _.uniqueId(Date.now() + '_'),
     content: content,
     done: done
   };
@@ -28,10 +28,11 @@ var TodoListStore = Marty.createStore({
     };
   },
   getItem: function (id) {
-    return _.find(this.state, _.matchesProperty('id', id));
+    return _.find(this.state.items, _.matchesProperty('id', id));
   },
   createItem: function (content, done) {
     this.state.items.push(createItem(content, done));
+    this.hasChanged();
   },
   updateItem: function (id, done) {
     var item = this.getItem(id);
