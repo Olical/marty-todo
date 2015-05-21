@@ -1,6 +1,6 @@
 {
     "rules": {
-        "strict": false
+		"strict": 0,
         "indent": [
             2,
             2
@@ -17,7 +17,7 @@
             2,
             "always"
         ],
-        "eol-last": false
+        "eol-last": 0
     },
     "env": {
         "es6": true,

@@ -1,10 +1,12 @@
+var Marty = require('marty');
 var React = require('react');
 var TodoItem = require('./TodoItem');
 var TodoStatus = require('./TodoStatus');
+var TodoListStore = require('../stores/TodoListStore');
 var _ = require('lodash');
 
 function renderItem(item) {
-  return <TodoItem item={item} key={item.id}/>
+  return <TodoItem item={item} key={item.id}/>;
 }
 
 var TodoList = React.createClass({
@@ -26,4 +28,11 @@ var TodoList = React.createClass({
   }
 });
 
-module.exports = TodoList;
+module.exports = Marty.createContainer(TodoList, {
+  listenTo: TodoListStore,
+  fetch: {
+    items: function () {
+      return TodoListStore.for(this).getItems();
+    }
+  }
+});
