@@ -20,7 +20,7 @@ var TodoListStore = Marty.createStore({
   getInitialState: function () {
     return {
       items: [
-        createItem('Build a todo list application with Marty', false),
+        createItem('Build a todo list application with Marty', true),
         createItem('Finish BOTH the seven languages in seven weeks books', false),
         createItem('Finish nand2tetris', true),
         createItem('Read "Out Of The Tarpit" again, keep that thing fresh', false)
