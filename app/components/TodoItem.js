@@ -2,8 +2,10 @@ var React = require('react');
 
 var TodoItem = React.createClass({
   render: function () {
+    var item = this.props.item;
+
     return (
-      <p>Item</p>
+      <li><input type="checkbox" checked={item.done}/> {item.content}</li>
     );
   }
 });
